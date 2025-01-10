@@ -20,6 +20,7 @@ Use _NoSQL_setup_starter.ipynb_ for this section of the challenge.
 Use _NoSQL_setup_starter.ipynb_ for this section of the challenge.
 1. Add the following information to the database:
 
+```
 {
     "BusinessName":"Penang Flavours",
     "BusinessType":"Restaurant/Cafe/Canteen",
@@ -48,13 +49,14 @@ Use _NoSQL_setup_starter.ipynb_ for this section of the challenge.
     "Distance":4623.9723280747176,
     "NewRatingPending":True
 }
+```
 
-2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
-3. Update the new restaurant with the BusinessTypeID you found.
-4. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
-5. Some of the number values are stored as strings, when they should be stored as numbers.
-6. Use update_many to convert latitude and longitude to decimal numbers.
-7. Use update_many to convert RatingValue to integer numbers.
+3. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
+4. Update the new restaurant with the BusinessTypeID you found.
+5. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
+6. Some of the number values are stored as strings, when they should be stored as numbers.
+7. Use update_many to convert latitude and longitude to decimal numbers.
+8. Use update_many to convert RatingValue to integer numbers.
 
 ### Part 3: Exploratory Analysis
 Use NoSQL_analysis_starter.ipynb for this section of the challenge.
@@ -73,9 +75,9 @@ Use the following questions to explore the database, and find the answers, so yo
   1. Which establishments have a hygiene score equal to 20?
   2. Which establishments in London have a RatingValue greater than or equal to 4?
      Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
-  4. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"
+  3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"
      Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
-  5. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
+  4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
      Hint: You will need to use the aggregation method to answer this.
 
 The first 5 rows of your resulting DataFrame should look something like this:
@@ -83,7 +85,7 @@ The first 5 rows of your resulting DataFrame should look something like this:
 ![image](https://github.com/user-attachments/assets/ffd3ade3-23b6-4c58-876d-df3633350a5e)
 
 
-This Project is the result of the learning lessons of Module 12: NoSQL from the Data Analysis and Visualization Boot Camp 2024. The main goal is to use the acquired habilities and knowledge in a real case. 
+This Project is the result of the learning lessons of Module 12: NoSQL Databases from the Data Analysis and Visualization Boot Camp 2024. The main goal is to use the acquired habilities and knowledge in a real case. 
 
 
 ## Table of contents
